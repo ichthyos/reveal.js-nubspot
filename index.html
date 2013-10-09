@@ -57,8 +57,11 @@
 							this.currentTime = 31;
 							this.play();
 							setTimeout(function() {
-								v.pause();
-							}, 23700);
+								v.currentTime = 61;
+								setTimeout(function() {
+									v.pause();
+								}, 16000);
+							}, 23200);
 						});
 						//v.play();
 					</script>
